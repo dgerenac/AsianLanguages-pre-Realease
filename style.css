@@ -386,25 +386,39 @@ footer {
     }
 }
 
+/* Centro total del contenido dentro de su contenedor */
+.full-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* centra horizontal */
+  justify-content: center;  /* centra vertical */
+  gap: 1.5rem;
+  min-height: 250px; /* ajusta si lo querés más alto; usa 100vh si es toda la pantalla */
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Ya tenías esto, asegura que esté */
 .translation-block {
   display: flex;
   flex-direction: column;
-  align-items: center; /* centra horizontalmente */
-  text-align: center;  /* centra el texto dentro de los <p> */
-  margin-bottom: 2rem;
+  align-items: center;
   gap: 0.25rem;
 }
 
 .translation-text {
+  margin: 0;
   font-size: 1rem;
   color: #111;
-  margin: 0;
 }
 
 .romanization {
+  display: block;
+  margin: 0 auto;       /* la centra horizontalmente */
+  text-align: center;   /* centra el texto dentro del párrafo */
   font-size: 0.95rem;
   color: #555;
   font-style: italic;
-  margin: 0;
+  max-width: 800px;     /* opcional: para que no se estire demasiado en pantallas grandes */
 }
 
