@@ -1,27 +1,31 @@
-# Asian Languages
+Welcome to the Asian Languages project!
 
-¡Bienvenido al proyecto **Asian Languages**!
+This is an educational and interactive project designed to help students practice writing Chinese characters (Hanzi) and Korean characters (Hangul). The web application offers a dynamic way to learn stroke order and sentence formatting, all within a modern and responsive interface.
 
-Este es un proyecto educativo e interactivo diseñado para ayudar a los estudiantes a practicar la escritura de caracteres en chino (Hanzi) y coreano (Hangul). La aplicación web ofrece una forma dinámica de aprender el orden de los trazos y el formato de las frases, todo en una interfaz moderna y responsiva.
+Main Features
+Interactive Hanzi Worksheet: Uses the Hanzi-Writer.js library to animate the stroke order of Chinese characters in real time.
 
-## Características Principales
+Interactive Hangul Worksheet: Allows users to practice writing Korean characters on a digital canvas.
 
-- **Hoja de trabajo interactiva de Hanzi:** Usa la librería `Hanzi-Writer.js` para animar el orden de los trazos de los caracteres chinos en tiempo real.
-- **Hoja de trabajo interactiva de Hangul:** Permite a los usuarios practicar la escritura de caracteres coreanos en un lienzo digital (canvas).
-- **Control de versiones:** El proyecto utiliza Git y está alojado en GitHub para un desarrollo colaborativo y un historial de cambios claro.
-- **Diseño responsivo:** La interfaz está construida con Bootstrap, asegurando una experiencia óptima en cualquier dispositivo (ordenadores, tabletas y móviles).
+Version Control: The project uses Git and is hosted on GitHub for collaborative development and clear change history.
 
-## Tecnologías Utilizadas
+Responsive Design: The interface is built with Bootstrap, ensuring an optimal experience on any device (desktop, tablet, and mobile).
 
-* **HTML5:** Para la estructura de la página.
-* **CSS3:** Para la estilización, incluyendo propiedades avanzadas y media queries para la responsividad.
-* **JavaScript:** Para la lógica y la interactividad de la aplicación.
-* **Bootstrap 5:** Un framework de CSS para el diseño y el layout.
-* **Hanzi-Writer:** Una librería de JavaScript para la animación de trazos de caracteres chinos.
+Technologies Used
+HTML5 – For the page structure.
 
-## Estructura del Proyecto
+CSS3 – For styling, including advanced properties and media queries for responsiveness.
 
+JavaScript – For application logic and interactivity.
 
+Bootstrap 5 – A CSS framework for layout and design.
+
+Hanzi-Writer – A JavaScript library for animating the strokes of Chinese characters.
+
+Project Structure
+pgsql
+Copiar
+Editar
 AsianLanguages/
 ├── aboutus.html
 ├── hangul.html
@@ -37,12 +41,7 @@ AsianLanguages/
 │   ├── liicon.png
 │   ├── Xicon.png
 └── README.md
+Contributions
+This project is in its early development stage. Contributions are welcome to improve functionality and design. If you have ideas or want to collaborate, feel free to contact the author.
 
-
-## Contribuciones
-
-Este proyecto se encuentra en una fase inicial de desarrollo. Las contribuciones son bienvenidas para mejorar la funcionalidad y el diseño. Si tienes ideas o quieres colaborar, no dudes en contactar al autor.
-
----
-
-© 2024 David. Todos los derechos reservados.
+© 2024 David. All rights reserved.
