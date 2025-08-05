@@ -1,12 +1,22 @@
-/* Estilos Globales para todo el cuerpo de la página */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #e8ffe99c;
-    color: #333; /* Color de texto principal */
-    line-height: 1.6; /* Espaciado de línea para mejor legibilidad */
+:root {
+  --bg: #f5f7fa;
+  --card-bg: #ffffff;
+  --text: #1f2937;
+  --radius: 1rem;
+  --shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+  --radius-sm: 0.75rem;
+  --ff-base: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --transition: 0.3s cubic-bezier(.4,.2,.2,1);
 }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--ff-base);
+  line-height: 1.55;
+  margin: 0;
+  font-size: 16px;
+}
+
 
 /* Estilos del encabezado principal */
 header {
@@ -288,3 +298,4 @@ footer {
         margin-top: 10px;
     }
 }
+
