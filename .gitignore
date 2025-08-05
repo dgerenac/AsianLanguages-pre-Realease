@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vscode/
+.sublime-project
+.sublime-workspace
+
+*.zip
+*.rar
+*.tar.gz
+*.log
+
+node_modules/
