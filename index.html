@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asian Languages - A Language Guide</title>
+    <!-- Incluimos Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Incluimos tu archivo CSS personalizado -->
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Guía interactiva para aprender a escribir en chino (Hanzi) y coreano (Hangul), con animación de orden de trazos.">
 </head>
+
+
 <body>
+    
+    <!-- Inicio Header -->
     <header class="bg-dark text-white py-3">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h1 class="mb-0">Asian Languages <span class="hanzi">中文</span> & <span class="hangul">한국어</span>.</h1>
-                </div>
-                <div class="col-md-6">
-                    <nav>
-                        <ul class="nav justify-content-end">
-                            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="hanzi.html">Hanzi <span class="idioma-chino">汉字</span></a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="hangul.html">Hangul <span class="idioma-coreano">한글</span></a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="aboutus.html">About us</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
+        <div class="col-md-6 site-title-wrapper">
+  <h1 class="site-title">Asian Languages <span class="hanzi">中文</span> & <span class="hangul">한국어</span>.</h1>
+</div>
+<div class="col-md-6">
+  <nav>
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="hanzi.html">Hanzi <span class="idioma-chino">汉字</span></a></li>
+      <li class="nav-item"><a class="nav-link" href="hangul.html">Hangul <span class="idioma-coreano">한글</span></a></li>
+      <li class="nav-item"><a class="nav-link" href="aboutus.html">About us</a></li>
+    </ul>
+  </nav>
+</div>
+
     </header>
 
+    <!-- Inicio Contenido Principal -->
     <main class="container my-4">
 
         <!-- Sección de Introducción con Video -->
@@ -39,15 +43,36 @@
                     <div class="ratio ratio-16x9">
                         <iframe src="https://www.youtube.com/embed/MMmOLN5zBLY" title="Introduction Video to Asian Languages" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                    <!-- Texto de introducción estático -->
                     <div id="intro-text-container">
                         <p class="lead text-center mt-3">
-                            Aprender nuevas cosas es una de las actividades más enriquecedoras que podemos hacer. El cerebro, un órgano increíblemente adaptable, se beneficia enormemente de este proceso gracias a la neuroplasticidad. Al exponernos a nuevos idiomas como el chino (Hanzi) y el coreano (Hangul), no solo adquirimos una nueva habilidad, sino que también fortalecemos la plasticidad de nuestro cerebro, mejorando la memoria, la concentración y la capacidad de resolver problemas.
+                           Learning new things is one of the most rewarding activities we can do. The brain, an incredibly adaptable organ, greatly benefits from this process thanks to neuroplasticity. By exposing ourselves to new languages such as Chinese (Hanzi) and Korean (Hangul), we not only acquire a new skill but also strengthen our brain's plasticity, improving memory, concentration, and problem-solving abilities.
+
                         </p>
+                    </div>
+                    <div id="intro-text-container">
+                        <p class="lead text-center mt-3">
+                           学习新事物是我们能做的最有收获的活动之一。大脑是一个极其适应性的器官，通过神经可塑性，这一过程能给它带来极大的好处。接触中文（汉字）和韩语（韩文）等新语言，不仅能让我们掌握一项新技能，还能增强大脑的可塑性，提高记忆力、专注力以及解决问题的能力。
+
+                        </p>
+                         <p class="romanization">
+        Xuéxí xīn shìwù shì wǒmen néng zuò de zuì yǒu shōuhuò de huódòng zhī yī. Dànǎo shì yīgè jíqí shìyìng xìng de qìguān, tōngguò shénjīng kě sùxìng, zhè yī guòchéng néng gěi tā dài lái jí dà de hǎochù. Jiēchù zhōngwén (hànzì) hé hányǔ (hánwén) děng xīn yǔyán, bùjǐn néng ràng wǒmen zhǎngwò yī xiàng xīn jìnéng, hái néng zēngqiáng dànǎo de kě sùxìng, tígāo jìyìlì, zhùnzhùnlì yǐjí jiějué wèntí de nénglì.
+    </p>
+                    </div>
+                    <div id="intro-text-container">
+                        <p class="lead text-center mt-3">
+                           새로운 것을 배우는 것은 우리가 할 수 있는 가장 보람찬 활동 중 하나입니다. 뇌는 놀라울 정도로 적응력이 뛰어난 기관으로, 신경 가소성 덕분에 이러한 과정에서 큰 이점을 얻습니다. 중국어(한자)와 한국어(한글)와 같은 새로운 언어에 접함으로써 우리는 새로운 기술을 습득할 뿐만 아니라 뇌의 가소성을 강화하여 기억력, 집중력, 문제 해결 능력을 향상시킬 수 있습니다.
+
+                        </p>
+                         <p class="romanization">
+        Saeroun geoseul baeuneun geoseun uriga hal su inneun gajang boramchan hwaldong jung hanamimnida. Noeneun nollaul jeongdoro jeogeungnyeogi ttui-eonan gigwan-euro, singyeong gasoseong deokbune ireonhan gwajeong-eseo keun ijeomeul eotsseumnida. Junggug-eo (Hanja)wa hangugeo (Hangeul)wa gateun saeroun eoneoe jeopham-euro sseo urineun saeroun gisuleul seupdeukhaneul ppunman anira noeyi gasoseongeul ganghwahayeo gieokryeok, jibjungnyeok, munje haegyeol neungnyeokeul hyangsang sikhil su itsseumnida.
+    </p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Sección de Objetivos -->
         <section class="objectives-section card p-4 shadow-sm mb-5">
             <h2 class="display-4 text-center mb-4">Objectives you can achieve</h2>
             <div class="row justify-content-center">
@@ -64,6 +89,7 @@
             </div>
         </section>
 
+        <!-- Sección de Recursos y Gráfico -->
         <section class="resources-section card p-4 shadow-sm mb-5">
             <h2 class="display-4 text-center mb-4">Progressive chart of their goals</h2>
             <div class="row justify-content-center text-center">
@@ -78,7 +104,9 @@
         </section>
 
     </main>
+    <!-- Fin Contenido Principal -->
 
+    <!-- Inicio Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <div class="container">
             <p class="mb-0">&copy; <span id="current-year"></span> All rights reserved, by David.</p>
@@ -90,7 +118,9 @@
             </div>
         </div>
     </footer>
-  
+    <!-- Fin Footer -->
+
+    <!-- Incluimos Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
