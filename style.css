@@ -17,53 +17,68 @@ body {
   font-size: 16px;
 }
 
-
-/* Estilos del encabezado principal */
-header {
-    background-color: #151B54;
-    color: white;
-    padding: 1rem 20px;
-    text-align: left;
+.tagline {
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 2px;
+  color: #6b7280; /* gris suave */
 }
 
-header h1 {
-    margin: 0;
-    /* Reducido para ser más pequeño en desktop */
-    font-size: 1.25rem;
+/* Header: título a la izquierda, nav a la derecha en una sola línea */
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* título a la izquierda, nav a la derecha */
+  gap: 1rem;
+  flex-wrap: nowrap; /* que no se quiebren en varias líneas */
 }
 
-/* Estilos para los nombres de los idiomas en chino y coreano */
-.hanzi, .hangul {
-    /* Reducido para que sea más sutil */
-    font-size: 0.7em;
-    text-align: left;
+nav {
+  display: flex;
+  align-items: center;
 }
 
-/* Estilos de la barra de navegación */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    float: right;
-    margin-top: -30px;
+.nav {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-wrap: nowrap; /* todos en una línea */
+  overflow-x: auto; /* en pantallas muy pequeñas permite scroll si hace falta */
 }
 
-nav ul li {
-    display: inline-block;
-    margin-left: 15px;
+/* Links como botones suaves */
+.nav .nav-link {
+  position: relative;
+  padding: 0.55rem 1rem;
+  border-radius: 0.65rem;
+  background: rgba(255, 255, 255, 0.08);
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  box-shadow: 0 6px 18px -8px rgba(0,0,0,0.1);
+  font-weight: 600;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  white-space: nowrap; /* que no se quiebren los textos */
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.nav .nav-link:hover,
+.nav .nav-link:focus-visible {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 34px -10px rgba(0,0,0,0.2);
+  color: #ffffb3;
 }
 
-nav ul li a:hover {
-    color: #FFFF33; /* Color de resaltado al pasar el cursor */
+.nav .nav-link.active {
+  background: rgba(255, 255, 255, 0.25);
 }
 
-/* Estilos del contenido principal */
+ 
 main {
     padding: 20px;
     max-width: 1450px;
@@ -123,8 +138,80 @@ a {
     text-decoration: underline;
 }
 
-a:hover {
-    color: #e74c3c; /* Color de resaltado para enlaces */
+.btn-custom {
+  font-family: "Helvetica Neue", Helvetica, Arial, system-ui, -apple-system, BlinkMacSystemFont;
+  font-weight: 600;
+  padding: 0.55rem 1.25rem;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  box-shadow: 0 8px 20px -5px rgba(0, 0, 0, 0.08);
+  line-height: 1.1;
+  font-size: 0.95rem;
+  outline: none;
+  text-decoration: none; /* útil si se usa en <a> */
+}
+
+/* Variante principal (azul degradado) */
+.btn-custom.primary {
+  background: linear-gradient(135deg, #3751ff, #5c88ff);
+  color: #fff;
+}
+
+/* Variante secundaria (blanco con borde sutil) */
+.btn-custom.secondary {
+  background: #fff;
+  color: var(--text);
+  border: 1px solid rgba(31, 41, 55, 0.15);
+}
+
+/* Hover / focus */
+.btn-custom:hover,
+.btn-custom:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 38px -10px rgba(0, 0, 0, 0.18);
+}
+
+.btn-custom:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 15px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Enfoque accesible */
+.btn-custom:focus-visible {
+  outline: 3px solid rgba(59, 130, 246, 0.6);
+  outline-offset: 2px;
+}
+
+/* ------------------ */
+/* Navegación como botones suaves */
+/* ------------------ */
+.nav .nav-link {
+  position: relative;
+  padding: 0.55rem 1rem;
+  border-radius: 0.65rem;
+  background: rgba(255, 255, 255, 0.08);
+  margin-left: 6px;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  box-shadow: 0 6px 18px -8px rgba(0,0,0,0.1);
+  font-weight: 600;
+}
+
+.nav .nav-link:hover,
+.nav .nav-link:focus-visible {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 34px -10px rgba(0,0,0,0.2);
+  color: #ffffb3;
+}
+
+.nav .nav-link.active {
+  background: rgba(255, 255, 255, 0.25);
 }
 
 /* Estilos para imágenes */
@@ -297,5 +384,27 @@ footer {
         float: none;
         margin-top: 10px;
     }
+}
+
+.translation-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra horizontalmente */
+  text-align: center;  /* centra el texto dentro de los <p> */
+  margin-bottom: 2rem;
+  gap: 0.25rem;
+}
+
+.translation-text {
+  font-size: 1rem;
+  color: #111;
+  margin: 0;
+}
+
+.romanization {
+  font-size: 0.95rem;
+  color: #555;
+  font-style: italic;
+  margin: 0;
 }
 
