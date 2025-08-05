@@ -1,0 +1,290 @@
+/* Estilos Globales para todo el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8ffe99c;
+    color: #333; /* Color de texto principal */
+    line-height: 1.6; /* Espaciado de línea para mejor legibilidad */
+}
+
+/* Estilos del encabezado principal */
+header {
+    background-color: #151B54;
+    color: white;
+    padding: 1rem 20px;
+    text-align: left;
+}
+
+header h1 {
+    margin: 0;
+    /* Reducido para ser más pequeño en desktop */
+    font-size: 1.25rem;
+}
+
+/* Estilos para los nombres de los idiomas en chino y coreano */
+.hanzi, .hangul {
+    /* Reducido para que sea más sutil */
+    font-size: 0.7em;
+    text-align: left;
+}
+
+/* Estilos de la barra de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-top: -30px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FFFF33; /* Color de resaltado al pasar el cursor */
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 20px;
+    max-width: 1450px;
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(138, 156, 255);
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff; /* Sutil línea divisoria */
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+/* Estilos para títulos de sección (h2, h3) */
+h2, h3 {
+    color: #2980b9;
+    text-align: left;
+    margin-bottom: 15px;
+    /* Reducido para ser más pequeño en desktop */
+    font-size: 1rem;
+}
+
+/* Estilo para el texto de explicación */
+.explanation-text {
+    font-size: 1rem; /* Ajustado para ser un poco más pequeño */
+    color: #555;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+/* Estilos para listas ordenadas y desordenadas */
+ol, ul {
+    list-style-position: inside;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ol li {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #e74c3c; /* Color de resaltado para enlaces */
+}
+
+/* Estilos para imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 4px;
+}
+
+/* Estilos para iconos sociales en el footer */
+.footer-social-icon {
+    width: 30px;
+    height: auto;
+    margin: 5px 10px;
+    display: inline-block;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #151B54;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    clear: both;
+}
+
+/* Clases de utilidad para placeholders */
+.videoph, .chart-placeholder {
+    background-color: #dddddd;
+    border: 1px dashed #e7f9ff;
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Contenedor de video para mantener la relación de aspecto 16:9 */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 */
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Estilos de la cuadrícula de Tian Zi Ge */
+.tian-zi-ge-section {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tian-zi-ge-grid {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tian-zi-ge-square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+/* Estilos de los idiomas en los títulos */
+.idioma-chino {
+    color: #d9534f;
+}
+.idioma-coreano {
+    color: #0275d8;
+}
+
+/* Estilos para botones de Bootstrap (ejemplo de personalización) */
+.btn-primary {
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+}
+
+/* Estilos para cajas de tarjetas (ej. en About Us) */
+.card-box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.2s ease;
+}
+
+.card-box:hover {
+    transform: translateY(-4px);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #2980b9;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #444;
+    text-align: justify;
+}
+
+/* Media Queries para responsividad */
+/* Ajustes para pantallas grandes (desktop) */
+.display-4 {
+    /* Reducido significativamente para desktop, aproximadamente la mitad de 3.5rem (Bootstrap default) */
+    font-size: 1.5rem; /* 24px si base es 16px */
+}
+
+@media (max-width: 992px) { /* Para pantallas de tabletas y laptops pequeñas */
+    header h1 {
+        font-size: 1.1rem;
+    }
+    h2, h3 {
+        font-size: 0.9rem;
+    }
+    .display-4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) { /* Para pantallas de tabletas en vertical y móviles grandes */
+    header h1 {
+        font-size: 1rem;
+    }
+    h2, h3 {
+        font-size: 0.8rem;
+    }
+    .display-4 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) { /* Para pantallas de móviles pequeños */
+    header h1 {
+        font-size: 0.9rem;
+    }
+    h2, h3 {
+        font-size: 0.7rem;
+    }
+    .display-4 {
+        font-size: 0.8rem;
+    }
+    .lead {
+        font-size: 0.8rem;
+    }
+    .nav {
+        justify-content: center !important;
+    }
+    nav ul {
+        float: none;
+        margin-top: 10px;
+    }
+}
